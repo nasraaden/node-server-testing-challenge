@@ -42,14 +42,14 @@ describe("server", function() {
                     expect(res.type).toMatch(/json/i)
                 })
         })
-        it("should return users array", function() {
-            // make a GET request to /
-            return request(server).get("/users")
-                .then(res => {
-                    // check that the body has {api: "up"}
-                    expect(res.body).toEqual([]);
-            })
-        })
+        // it("should return users array", function() {
+        //     // make a GET request to /
+        //     return request(server).get("/users")
+        //         .then(res => {
+        //             // check that the body has {api: "up"}
+        //             expect(res.body).toBe([users]);
+        //     })
+        // })
     })
 
 })
